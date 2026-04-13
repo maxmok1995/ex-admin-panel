@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   admin-panel:
-    image: ghcr.io/opexdev/admin-panel
+    image: ex-admin-panel:local
     environment:
       - APP_TITLE=$ADMIN_TITLE
       - DESCRIPTION=$ADMIN_DESCRIPTION
@@ -11,6 +11,7 @@ services:
       - CLIENT_SECRET=$CLIENT_SECRET
       - SUPERSET_URL=$SUPERSET_URL
       - CALENDAR_TYPE=$WEB_APP_CALENDAR_TYPE
+      - WALLETSTAT_URL=$WALLETSTAT_URL
     networks:
       - default
     deploy:
@@ -18,4 +19,5 @@ services:
         condition: on-failure
 networks:
   default:
-    driver: bridge
+    external: true
+    name: opex

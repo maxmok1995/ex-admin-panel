@@ -20,6 +20,8 @@ import setupAxios from "./setupAxios";
 import WhiteList from "./pages/WhiteList/WhiteList";
 import Wallet from "./pages/Wallet/Wallet";
 import ChainAndToken from "./pages/ChainAndToken/ChainAndToken";
+import DepositAddressPage from "./pages/DepositAddress/DepositAddress";
+import TradingPairs from "./pages/TradingPairs/TradingPairs";
 
 
 function Opex() {
@@ -78,6 +80,8 @@ function Opex() {
                     <Route path={RoutesName.WhiteList} element={<WhiteList/>}/>
                     <Route path={RoutesName.Wallet} element={<Wallet/>}/>
                     <Route path={RoutesName.ChainAndToken} element={<ChainAndToken/>}/>
+                    <Route path={RoutesName.DepositAddress} element={<DepositAddressPage/>}/>
+                    <Route path={RoutesName.TradingPairs} element={<TradingPairs/>}/>
                 </Route>
                 <Route path="unauthorized" element={<Unauthorized/>}/>
             </Route>

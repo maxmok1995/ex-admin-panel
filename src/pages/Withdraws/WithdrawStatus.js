@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Loading from "../../components/Loading";
-import {adminSetWithdrawStatus} from "js-api-client";
+import {adminSetWithdrawStatus} from "../../api/adminWithdraw";
 
 const WithdrawStatus = ({id, withdraw, refetch}) => {
     const [error, setError] = useState(false);

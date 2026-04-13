@@ -53,6 +53,18 @@ const SideBar = ({closeMenu}) => {
                     <span className="">Chain And Token</span>
                 </NavLink>
             </li>
+            <li className="has-child">
+                <NavLink to={Routes.TradingPairs}>
+                    <Icon iconName="icon-withdra text-color font-size-md-plus"/>
+                    <span className="">Trading Pairs</span>
+                </NavLink>
+            </li>
+            <li className="has-child">
+                <NavLink to={Routes.DepositAddress}>
+                    <Icon iconName="icon-layersm text-color font-size-md-plus"/>
+                    <span className="">Deposit Address</span>
+                </NavLink>
+            </li>
         </ul>
 
     </div>

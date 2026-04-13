@@ -14,3 +14,6 @@ export const WhiteList = "white-list";
 export const Wallet = "wallet";
 export const ChainAndToken = "chain-token";
 
+export const DepositAddress = "deposit-address";
+
+export const TradingPairs = "trading-pairs";
